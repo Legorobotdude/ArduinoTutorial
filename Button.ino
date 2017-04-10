@@ -44,7 +44,7 @@ void loop() {
   buttonState = digitalRead(buttonPin);
 
   // check if the pushbutton is pressed.
-  // if it is, the buttonState is HIGH:
+  // if it is, the buttonState is LOW: (Because of the internal pullup resistor of the Arduino)
   if (buttonState == LOW) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
